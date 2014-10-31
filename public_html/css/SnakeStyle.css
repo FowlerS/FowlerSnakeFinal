@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#game-screen {
+    display: block;
+}
+
+#gameOver {
+    position: absolute;
+    visibility: hidden;
+}
+
+h1, h3{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.title{
+    font-size: 70px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#restartButton{
+    border: 2px white;
+}
+
+#restartButton:hover{
+    background-color: blue;
+}
