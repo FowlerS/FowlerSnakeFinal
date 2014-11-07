@@ -121,6 +121,7 @@ function snakeUpdate(){
    
    checkFoodCollisions(snakeHeadX, snakeHeadY);
    checkWallCollisions(snakeHeadX, snakeHeadY);
+   checkSnakeCollisions(snakeHeadX, snakeHeadY);
    
    var snakeTail = snake.pop();
    snakeTail.x = snakeHeadX;
@@ -199,9 +200,14 @@ function keyboardHandler(event){
         }
     }
         
-    function checksnakeCollisions(snakeHeadX, snakeHeadY){
-        for(var index - 1; index < snake.length; index++){
-            if(snakeHeadX == snake[]
+    function checkSnakeCollisions(snakeHeadX, snakeHeadY){
+        for(var index = 1; index < snake.length; index++)
+        {
+            if(snakeHeadX == snake[index].x && snakeHeadY == snake[index].y)
+            {
+                setState("GAME OVER");
+                return;
+            }
         }
     }
     
